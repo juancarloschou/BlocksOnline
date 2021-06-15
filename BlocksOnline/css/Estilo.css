@@ -1,0 +1,36 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#IdCanvas {
+    /*border: solid 1px black;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.Pantalla {
+    width: 100%;
+    height: 100%;
+}
+
+#divPruebas {
+    width: 480px;
+    height: 800px;
+    background-image: url('../images/dimensiones.png');
+}
+
+.CuadroTexto {
+    display: none;
+    position: absolute;
+    font-family: Arial; /*"Times New Roman", Times, serif*/
+    font-style: normal;
+    font-size: 1.0em;
+}
+
+.Imagen {
+    display: none;
+    border: none;
+}
+

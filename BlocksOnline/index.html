@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--evitar que el navegador movil escale la pagina (target-densitydpi=medium-dpi depreciado) -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+
+    <title>Blocks Online</title>
+
+    <!-- BlocksOnline references -->
+    <link href="css/Estilo.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div id="divPruebas" class="Pantalla" style="display:none">
+        Game Blocks Debug Mode<br />
+        <br />
+        <div id="divMensaje"></div><br />
+        <br />
+        Debug: <select id="cmbDebugActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select><br />
+        Publicidad movil: <select id="cmbPublicidadActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select><br />
+		Piezas Nuevas: <select id="cmbPiezasNuevasActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select><br />
+        Gemas Nuevas: <select id="cmbGemasNuevasActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select><br />
+        Debug muchas gemas: <select id="cmbDebugGemasActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select><br />
+        Sonido: <select id="cmbSonidoActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select><br />
+        Musica: <select id="cmbMusicaActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select><br />
+        Teclado: <select id="cmbTecladoActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select><br />
+        Raton: <select id="cmbRatonActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select><br />
+        Touch: <select id="cmbTouchActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select><br />
+        Botones: <select id="cmbBotoneraActivo">
+            <option selected="selected">Si</option>
+            <option>No</option>
+        </select>
+        <br />
+        <br />
+        <br />
+        <input id="btnEmpezar" type="button" value="Empezar" style="height:50px; width:200px" />
+        <br />
+        <br />
+        <br />
+        <input id="btnInfo" type="button" value="Más Info" style="height:25px" />
+        <br />
+        <div id="divInfo" style="background-color:white; padding:10px; border:solid 1px grey; width:200px"></div>
+    </div>
+
+
+    <!-- CANVAS -->
+    <div id="divCanvas" class="Pantalla" style="display:none">
+        <canvas id="IdCanvas">Su navegador no soporta HTML5</canvas>
+    </div>
+
+    <div>
+        <!--cuadro texto que se usa integrado con el canvas-->
+        <input type="text" id="txtNombre" maxlength="50" class="CuadroTexto" />
+        <!--imagen precargada mientras se hace el loading-->
+        <img id="iLogoPpal" src="images/menu_principal_24.png" class="Imagen" />
+        <img id="iFondoPpal" src="images/menu_principal_fondo.png" class="Imagen" />
+    </div>
+
+
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    
+    <!-- scripts creados por el usuario -->
+    <script src="scripts/AnimationFrame.js"></script>
+    <script src="scripts/Admob.js"></script>
+    <script src="scripts/Variables_Pantalla.js"></script>
+    <script src="scripts/Variables_Juego.js"></script>
+    <script src="scripts/Principal_Pantalla.js"></script>
+    <script src="scripts/Principal_Juego.js"></script>
+    <script src="scripts/MapaPiezas.js"></script>
+
+    <!-- empezar la partida -->
+    <script src="scripts/index.js"></script> 
+
+
+</body>
+</html>
